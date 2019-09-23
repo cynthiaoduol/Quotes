@@ -7,6 +7,7 @@ import{Quote} from '../quote';
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
+  
 
   quotes: Quote = [
     {text:'Aspire to inspire before you expire', author:'Rex Hans', submitter:'Faith'},
