@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div *ngFor='let quote of quotes' class="card ">
+    <div class="card" *ngFor='let quote of quotes;let i = index' >
       <div class="card-header text-center">
         <h4>{{quote.text}}</h4>
         <h6>{{quote.author}}</h6>
@@ -8,7 +8,7 @@
 
       <div class="card-body">
         <p>Posted by:{{quote.submitter}}</p>
-        <span (click)="delete" class="del">
+        <span (click)="delete(i) " class="del">
           <i class="fa fa-trash"></i>
         </span>
       </div>
