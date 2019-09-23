@@ -24,8 +24,8 @@ export class QuoteComponent implements OnInit {
     quote.text=quote.text;
     quote.author=quote.author;
     quote.submitter=quote.submitter;
-    quote.upvotes=quote.upvotes + 1
-    quote.downvotes=quote.downvotes + 1
+    quote.upvotes=quote.upvotes;
+    quote.downvotes=quote.downvotes
 
 
     this.quotes.push(quote)

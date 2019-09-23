@@ -4,5 +4,6 @@ h1{
   font-weight: bold;
   font-size: 100px;
   color: hotpink;
-  background-color: burlywood
+  background-color: burlywood;
+  font-style: italic;
 }
