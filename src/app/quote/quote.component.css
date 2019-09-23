@@ -2,3 +2,19 @@
   color:red;
   float:right;
 }
+.upvote{
+  color:rgb(226, 142, 31);
+}
+.downvote{
+  color:rgb(226, 142, 31);
+}
+.card{
+  margin: 20px;
+  text-align: center;
+}
+
+.action{
+  text-align: center;
+  font-size: 20px;
+  align-items: center;
+}
