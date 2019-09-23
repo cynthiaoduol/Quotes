@@ -9,11 +9,15 @@ import{Quote} from '../quote';
 export class QuoteComponent implements OnInit {
   
 
-  quotes: Quote = [
+  quotes: Quote[] = [
     {text:'Aspire to inspire before you expire', author:'Rex Hans', submitter:'Faith'},
     {text:'Aspire to inspire before you expire', author:'Rex Hans', submitter:'Faith'},
     {text:'Aspire to inspire before you expire', author:'Rex Hans', submitter:'Faith'}, 
   ];
+
+  delete(i) {
+    this.quotes.splice(i, 1)
+  }
 
   constructor() { }
 

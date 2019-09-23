@@ -1,12 +1,33 @@
 <h1>{{title}}</h1>
-<div class="container-fluid">
-  <div *ngFor='let quote of quotes' class="card">
-    <div class="card-header">
-      <h4>{{quote.text}}</h4>
-      <h6>{{quote.author}}</h6>
+<div class="container">
+  <div class="row">
+    <div *ngFor='let quote of quotes' class="card ">
+      <div class="card-header text-center">
+        <h4>{{quote.text}}</h4>
+        <h6>{{quote.author}}</h6>
+      </div>
+
+      <div class="card-body">
+        <p>Posted by:{{quote.submitter}}</p>
+        <span (click)="delete(i)" class="del">
+          <i class="fa fa-trash"></i>
+        </span>
+      </div>
+
+      <div class="card-footer">
+        <div class="row">
+          <div class="col-3 action" (click)="quote.upvotes = quote.upvotes + 1">
+            <i class="fa fa-thumbs-up"></i>
+          </div>
+
+          <div class="col-3 action" (click)="quote.downvotes = quote.downvotes + 1">
+            <i class="fa fa-thumbs-down"></i>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="card-body">
-      <p>Posted by:{{quote.submitter}}
-    </div>
+  </div>
+  <div class="col-md-6">
+    <app-quote-form></app-quote-form>
   </div>
 </div>
