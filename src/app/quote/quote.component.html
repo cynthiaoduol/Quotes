@@ -1,4 +1,3 @@
-<h1>{{title}}</h1>
 <div class="container">
   <div class="row">
     <div *ngFor='let quote of quotes' class="card ">
@@ -9,7 +8,7 @@
 
       <div class="card-body">
         <p>Posted by:{{quote.submitter}}</p>
-        <span (click)="delete(i)" class="del">
+        <span (click)="delete(icon)" class="del">
           <i class="fa fa-trash"></i>
         </span>
       </div>

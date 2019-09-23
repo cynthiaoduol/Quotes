@@ -11,8 +11,8 @@ export class QuoteComponent implements OnInit {
 
   quotes: Quote[] = [
     new Quote('Aspire to inspire before you expire', 'Rex Hans', 'Faith'),
-    new Quote('Aspire to inspire before you expire', 'Rex Hans', 'Fadhul'),
-    new Quote('Aspire to inspire before you expire', 'Rex Hans', 'Ian'),
+    new Quote('Think big, Work smart', 'Ali Mohammed', 'Fadhul'),
+    new Quote('Everyone is born intelligent.It takes hardwork to die a fool', 'Lucy Serwa', 'Ian'),
   ];
 
   delete(i) {
