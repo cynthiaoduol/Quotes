@@ -1,5 +1,3 @@
 export class Quote {
-  text: string;
-  author:string;
-  submitter:string;
+  constructor(public text:string,public author:string,public submitter:string){}
 }
